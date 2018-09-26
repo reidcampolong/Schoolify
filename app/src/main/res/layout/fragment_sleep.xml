@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sleep Timer"
+        android:id="@+id/textView3"
+        android:textSize="32dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Wake-Up Time:"
+            android:id="@+id/lblCaptionTime"
+            android:layout_weight="0.19"
+            android:paddingLeft="30dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="7:00 AM (Tap to edit)"
+            android:id="@+id/lblWakeUp"
+            android:layout_weight="0.19" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblSleep"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="32dp"
+        android:text="Enter a time above.         "
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.88" />
+
+    <ImageView
+        android:layout_width="546dp"
+        android:layout_height="437dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/bed"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="100dp" />
+
+</LinearLayout>
